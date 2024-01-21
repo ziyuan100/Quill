@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-icon {
+    @apply relative flex items-center justify-center h-16 w-16 mt-2 mb-2 mx-auto shadow-lg bg-dark3 hover:bg-pink-700
+      rounded-3xl hover:rounded-xl transition-all ease-linear cursor-pointer;
+  }
+
+  .nav-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-16 rounded-md shadow-md text-white bg-dark1 text-xs font-bold transition-all duration-100 origin-left;
+  }
+
+  /* To be deleted */
+  .default-user-icon {
+    @apply relative flex items-center justify-center h-10 w-10 shadow-lg rounded-full bg-gray-500 ml-1;
+  }
+  
+  .message-div {
+    @apply flex mb-2 py-1 items-center hover:bg-dark2;
+  }
+}
